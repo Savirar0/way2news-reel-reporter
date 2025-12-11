@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Way2News Reel Reporter Program</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Poppins', 'Noto Sans Tamil', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                yellow: '#FFB300', // Professional Amber
+                dark: '#222222', // Softer Charcoal Black
+                black: '#000000', // Pure Black for specific accents
+                grey: '#666666', // Uniform Body Text Grey
+                light: '#F8F9FA', // Clean Light Grey Background
+                border: '#E5E7EB', // Standard Border
+              }
+            },
+            boxShadow: {
+              'card': '0 2px 8px rgba(0, 0, 0, 0.05)',
+              'card-hover': '0 10px 25px -5px rgba(0, 0, 0, 0.1)',
+              'glow': '0 4px 14px 0 rgba(255, 179, 0, 0.39)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html { scroll-behavior: smooth; }
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.559.0",
+    "react/": "https://esm.sh/react@^19.2.1/",
+    "react": "https://esm.sh/react@^19.2.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.1/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
