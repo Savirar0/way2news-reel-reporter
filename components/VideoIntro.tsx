@@ -16,8 +16,6 @@ const VideoIntro: React.FC<VideoIntroProps> = ({ onVideoEnd }) => {
           // Autoplay was prevented.
           // Show a play button or something to the user.
           console.error("Video autoplay was prevented: ", error);
-          // As a fallback, we can call onVideoEnd directly to not block the UI
-          onVideoEnd();
         });
       }
     };
@@ -31,7 +29,7 @@ const VideoIntro: React.FC<VideoIntroProps> = ({ onVideoEnd }) => {
     return () => {
       videoElement?.removeEventListener('canplaythrough', playVideo);
     };
-  }, [onVideoEnd]);
+  }, []);
 
   return (
     <div className="fixed inset-0 bg-black z-50 flex justify-center items-center">
@@ -41,6 +39,7 @@ const VideoIntro: React.FC<VideoIntroProps> = ({ onVideoEnd }) => {
         onEnded={onVideoEnd}
         muted
         playsInline
+        controls
         className="w-full h-full object-cover"
         preload="auto"
       />
