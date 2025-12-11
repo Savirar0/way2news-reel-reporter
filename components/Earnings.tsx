@@ -39,7 +39,7 @@ const Earnings: React.FC<Props> = ({ content }) => {
                 </p>
             </div>
             <div className="mt-4">
-              <img src="assets/upi.jpg" alt="UPI Payments" className="w-full h-auto" />
+              <img src="/assets/upi.jpg" alt="UPI Payments" className="w-full h-auto" />
             </div>
           </div>
 

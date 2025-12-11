@@ -37,7 +37,7 @@ const VideoIntro: React.FC<VideoIntroProps> = ({ onVideoEnd }) => {
     <div className="fixed inset-0 bg-black z-50 flex justify-center items-center">
       <video
         ref={videoRef}
-        src="assets/intro.mp4"
+        src="/assets/intro.mp4"
         onEnded={onVideoEnd}
         muted
         playsInline

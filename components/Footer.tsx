@@ -14,7 +14,7 @@ const Footer: React.FC<FooterProps> = ({ content, onLinkClick }) => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-                <img src="assets/waytonewslogo.png" alt="Way2News Logo" className="h-10 w-auto" />
+                <img src="/assets/waytonewslogo.png" alt="Way2News Logo" className="h-10 w-auto" />
             </div>
             <p className="text-brand-grey max-w-sm text-sm leading-relaxed">{content.footer.desc}</p>
           </div>
