@@ -22,14 +22,11 @@ const HowItWorks: React.FC<Props> = ({ content }) => {
             const Icon = icons[idx];
             return (
               <div key={idx} className="bg-white rounded-2xl p-6 md:p-8 shadow-card border border-black hover:shadow-card-hover hover:border-brand-yellow/50 transition-all duration-300 group relative z-10 h-full flex flex-col">
-                <div className="absolute top-4 right-4 text-6xl font-black text-brand-light/80 select-none z-0">
-                    {idx + 1}
-                </div>
                 <div className={`w-14 h-14 bg-brand-light rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-brand-yellow transition-all duration-300 shadow-sm relative z-10 border border-brand-border group-hover:border-brand-yellow`}>
                   {/* Added fill and stroke adjustments for 'real' look */}
                   <Icon size={28} strokeWidth={1.5} className="text-brand-dark group-hover:text-brand-dark transition-colors fill-brand-yellow/20 group-hover:fill-brand-light/20" />
                 </div>
-                <h3 className="text-lg font-bold text-brand-dark mb-3 relative z-10 leading-tight">{step.title}</h3>
+                <h3 className="text-lg font-bold text-brand-dark mb-3 relative z-10 leading-tight">{`${idx + 1}. ${step.title}`}</h3>
                 <p className="text-brand-grey text-sm leading-relaxed relative z-10">{step.desc}</p>
               </div>
             );
