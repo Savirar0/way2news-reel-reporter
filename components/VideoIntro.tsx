@@ -13,17 +13,13 @@ const VideoIntro: React.FC<VideoIntroProps> = ({ onVideoEnd }) => {
     const playVideo = () => {
       if (videoElement) {
         videoElement.play().catch(error => {
-          // Autoplay was prevented.
-          // Show a play button or something to the user.
           console.error("Video autoplay was prevented: ", error);
         });
       }
     };
 
-    // Attempt to play
     playVideo();
 
-    // Add event listener for when the video can be played through
     videoElement?.addEventListener('canplaythrough', playVideo);
 
     return () => {
@@ -39,7 +35,6 @@ const VideoIntro: React.FC<VideoIntroProps> = ({ onVideoEnd }) => {
         onEnded={onVideoEnd}
         muted
         playsInline
-        controls
         className="w-full h-full object-cover"
         preload="auto"
       />
