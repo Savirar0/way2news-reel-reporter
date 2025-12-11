@@ -14,11 +14,7 @@ const Footer: React.FC<FooterProps> = ({ content, onLinkClick }) => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-                {/* Unified Logo Style with Header */}
-                <div className="w-9 h-9 bg-brand-yellow rounded-xl flex items-center justify-center shadow-sm">
-                    <span className="text-brand-dark font-black text-xl">W</span>
-                </div>
-                <span className="font-bold text-xl tracking-tight">Way2News</span>
+                <img src="assets/waytonewslogo.png" alt="Way2News Logo" className="h-10 w-auto" />
             </div>
             <p className="text-brand-grey max-w-sm text-sm leading-relaxed">{content.footer.desc}</p>
           </div>

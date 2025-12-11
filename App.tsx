@@ -23,7 +23,7 @@ function App() {
   const [toast, setToast] = useState({ isVisible: false, message: '' });
   const [hasSelectedLang, setHasSelectedLang] = useState(false);
   const [showPolicyModal, setShowPolicyModal] = useState(false);
-  const [videoEnded, setVideoEnded] = useState(false);
+  const [showVideo, setShowVideo] = useState(true);
 
   useEffect(() => {
     // Check local storage for language preference
@@ -72,12 +72,12 @@ function App() {
   };
 
   const handleVideoEnd = () => {
-    setVideoEnded(true);
+    setShowVideo(false);
   };
 
   const content = translations[lang];
 
-  if (!videoEnded) {
+  if (showVideo) {
     return <VideoIntro onVideoEnd={handleVideoEnd} />;
   }
 

@@ -63,12 +63,7 @@ const Header: React.FC<HeaderProps> = ({ lang, setLang, content }) => {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="flex-shrink-0 flex items-center gap-2 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-              <div className="w-9 h-9 bg-brand-yellow rounded-xl flex items-center justify-center shadow-sm">
-                <span className="text-brand-dark font-black text-xl">W</span>
-              </div>
-              <span className="font-bold text-xl tracking-tight text-brand-dark">
-                Way2News
-              </span>
+              <img src="assets/waytonewslogo.png" alt="Way2News Logo" className="h-8 w-auto" />
             </div>
 
             {/* Desktop Nav */}
