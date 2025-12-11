@@ -72,7 +72,7 @@ const Hero: React.FC<HeroProps> = ({ content }) => {
                         </div>
                         <div className="flex-1 bg-gray-50 relative p-2">
                             <div className="w-full h-full rounded-2xl bg-gray-200 overflow-hidden relative group">
-                                <img src="https://picsum.photos/400/600" alt="News Reel" className="w-full h-full object-cover opacity-90" />
+                                <video src="assets/vant.mp4" autoPlay loop muted className="w-full h-full object-cover opacity-90" />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-4">
                                      <div className="w-3/4 h-3 bg-white/80 rounded-full mb-2"></div>
                                      <div className="w-1/2 h-3 bg-white/60 rounded-full"></div>

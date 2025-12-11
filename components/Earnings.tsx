@@ -18,7 +18,7 @@ const Earnings: React.FC<Props> = ({ content }) => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12">
           
           {/* Left Column: Payment Model */}
-          <div className="lg:col-span-5 bg-brand-light rounded-2xl p-8 border border-brand-border h-full">
+          <div className="lg:col-span-5 bg-brand-light rounded-2xl p-8 border border-black h-full">
             <h3 className="text-xl font-bold text-brand-dark mb-6 flex items-center gap-2">
                 <div className="p-2 bg-brand-yellow/10 rounded-lg">
                     <TrendingUp className="text-brand-yellow fill-brand-yellow/20" size={24} />
@@ -27,7 +27,7 @@ const Earnings: React.FC<Props> = ({ content }) => {
             </h3>
             <ul className="space-y-4">
                 {content.earnings.modelItems.map((item, idx) => (
-                    <li key={idx} className="flex items-center gap-3 bg-white p-4 rounded-xl border border-brand-border shadow-sm">
+                    <li key={idx} className="flex items-center gap-3 bg-white p-4 rounded-xl border border-black shadow-sm">
                         <CheckCircle2 className="text-green-500 flex-shrink-0 fill-green-100" size={22} />
                         <span className="font-medium text-brand-dark text-sm md:text-base">{item}</span>
                     </li>
@@ -45,7 +45,7 @@ const Earnings: React.FC<Props> = ({ content }) => {
 
           {/* Right Column: Earnings Tiers Table */}
           <div className="lg:col-span-7">
-            <div className="bg-white rounded-2xl border border-brand-border shadow-card overflow-hidden">
+            <div className="bg-white rounded-2xl border border-black shadow-card overflow-hidden">
                 <div className="bg-brand-dark p-4 md:p-6 text-center">
                     <h3 className="text-white font-bold text-lg md:text-xl">{content.earnings.tiersTitle}</h3>
                 </div>

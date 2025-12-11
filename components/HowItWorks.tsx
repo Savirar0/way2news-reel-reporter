@@ -10,7 +10,7 @@ const icons = [Video, ClipboardCheck, UserCheck, BarChart3];
 
 const HowItWorks: React.FC<Props> = ({ content }) => {
   return (
-    <section id="how-it-works" className="py-12 md:py-20 bg-brand-light border-y border-brand-border">
+    <section id="how-it-works" className="py-12 md:py-20 bg-brand-light border-y border-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-2xl md:text-3xl font-bold text-brand-dark mb-4">{content.sections.howItWorks}</h2>
@@ -21,7 +21,7 @@ const HowItWorks: React.FC<Props> = ({ content }) => {
           {content.steps.map((step, idx) => {
             const Icon = icons[idx];
             return (
-              <div key={idx} className="bg-white rounded-2xl p-6 md:p-8 shadow-card border border-brand-border hover:shadow-card-hover hover:border-brand-yellow/50 transition-all duration-300 group relative z-10 h-full flex flex-col">
+              <div key={idx} className="bg-white rounded-2xl p-6 md:p-8 shadow-card border border-black hover:shadow-card-hover hover:border-brand-yellow/50 transition-all duration-300 group relative z-10 h-full flex flex-col">
                 <div className="absolute top-4 right-4 text-6xl font-black text-brand-light/80 select-none z-0">
                     {idx + 1}
                 </div>

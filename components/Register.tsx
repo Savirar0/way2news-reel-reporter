@@ -12,9 +12,9 @@ const Register: React.FC<Props> = ({ content }) => {
   };
 
   return (
-    <section id="register" className="py-16 md:py-24 bg-brand-light border-t border-brand-border">
+    <section id="register" className="py-16 md:py-24 bg-brand-light border-t border-black">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-white text-brand-dark rounded-3xl p-6 md:p-16 shadow-2xl relative overflow-hidden border border-brand-border text-center">
+        <div className="bg-white text-brand-dark rounded-3xl p-6 md:p-16 shadow-2xl relative overflow-hidden border border-black text-center">
            {/* Decorative */}
            <div className="absolute top-0 right-0 w-64 h-64 bg-brand-yellow/10 rounded-full blur-3xl -mr-16 -mt-16"></div>
            <div className="absolute bottom-0 left-0 w-64 h-64 bg-brand-yellow/5 rounded-full blur-3xl -ml-16 -mb-16"></div>
@@ -25,7 +25,7 @@ const Register: React.FC<Props> = ({ content }) => {
                 <p className="text-brand-grey text-base md:text-lg">{content.form.subtitle}</p>
             </div>
 
-            <div className="bg-gray-50/80 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-brand-border shadow-inner mx-auto text-center">
+            <div className="bg-gray-50/80 backdrop-blur-sm rounded-2xl p-6 md:p-8 border border-black shadow-inner mx-auto text-center">
                 <p className="text-center text-brand-dark font-medium mb-6 leading-relaxed">
                     {content.form.portalDesc}
                 </p>
