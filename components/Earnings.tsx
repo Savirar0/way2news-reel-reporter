@@ -38,6 +38,9 @@ const Earnings: React.FC<Props> = ({ content }) => {
                     Weekly payouts for approved reels. <br/> Bonuses paid monthly.
                 </p>
             </div>
+            <div className="mt-4">
+              <img src="assets/upi.jpg" alt="UPI Payments" className="w-full h-auto" />
+            </div>
           </div>
 
           {/* Right Column: Earnings Tiers Table */}

@@ -15,6 +15,7 @@ import InitialLanguageSelector from './components/InitialLanguageSelector';
 import ContentPolicyModal from './components/ContentPolicyModal';
 import { translations } from './constants';
 import { Language } from './types';
+import VideoIntro from './components/VideoIntro';
 
 function App() {
   const [lang, setLang] = useState<Language>('en');
@@ -22,6 +23,7 @@ function App() {
   const [toast, setToast] = useState({ isVisible: false, message: '' });
   const [hasSelectedLang, setHasSelectedLang] = useState(false);
   const [showPolicyModal, setShowPolicyModal] = useState(false);
+  const [videoEnded, setVideoEnded] = useState(false);
 
   useEffect(() => {
     // Check local storage for language preference
@@ -69,7 +71,15 @@ function App() {
     localStorage.setItem('way2news_lang', newLang);
   };
 
+  const handleVideoEnd = () => {
+    setVideoEnded(true);
+  };
+
   const content = translations[lang];
+
+  if (!videoEnded) {
+    return <VideoIntro onVideoEnd={handleVideoEnd} />;
+  }
 
   return (
     <div className="min-h-screen bg-white font-sans text-brand-dark selection:bg-brand-yellow selection:text-black">
